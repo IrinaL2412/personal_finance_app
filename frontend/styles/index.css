@@ -1,0 +1,32 @@
+.form {
+    width: 397px;
+}
+
+.form-input {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    color: #6C757D;
+    background-image: none;
+    margin-bottom: 10px;
+}
+
+.input-date.form-control {
+    margin-bottom: 0;
+}
+
+.chart-title {
+    color: #290661;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-control option[selected] {
+    color: #6C757D;
+}
+
+
+
+
+

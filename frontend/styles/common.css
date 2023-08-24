@@ -1,0 +1,233 @@
+body {
+    font-family: 'Roboto', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    padding: 0;
+}
+
+h1 {
+    font-weight: bold;
+    color: rgba(5, 44, 101, 1);
+    margin-bottom: 40px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #D9D9D9 !important;
+}
+
+.border-end {
+    border-right: 1px solid #D9D9D9 !important;
+}
+
+.sidebar {
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.balance {
+    color: #052C65;
+    font-weight: bold;
+}
+
+.balance span {
+    color: #0D6EFD;
+}
+
+.logo {
+    padding: 40px 71px 20px 50px;
+}
+
+.nav {
+    color: red;
+}
+
+.nav-item {
+    border-radius: 5px;
+}
+
+.nav-item .nav-link {
+    column-gap: 10px;
+    padding: 12px 11px 12px 16px;
+}
+
+.nav-link {
+    fill: #052C65;
+    color: #052C65;
+}
+
+.nav-link:hover {
+    fill: #0D6EFD;
+    color: #0D6EFD;
+}
+
+.menu {
+    padding: 60px 20px 20px;
+}
+
+.accordion-item {
+    border: none;
+}
+
+
+.accordion-button {
+    font-size: 14px;
+    color: #052C65;
+}
+
+.accordion-button.nav-link.active {
+    border-radius: 5px 5px 0 0;
+    border-image-width: 0;
+}
+
+.accordion-button.nav-link {
+    border-image-width: 0;
+    border-color: unset;
+}
+
+.accordion-body {
+    padding: unset;
+    border: 1px solid #0D6EFD;
+    border-radius: 0 0 5px 5px;
+}
+
+.accordion-body .nav-link {
+    border-radius: unset;
+}
+
+.accordion-body .nav-link:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+.accordion-button::after {
+    transform:matrix(0.00,-1.00,1.00,0.00,0,0);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23052C65'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:hover::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230D6EFD'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed)::after {
+    transform:matrix(1.00,0.00,0.00,1.00,0,0);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button.nav-link.active::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.nav-pills .nav-link.active {
+    fill: #FFFFFFFF;
+}
+
+.active {
+    box-shadow: none;
+    outline: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-image-width: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+    background-color: #0D6EFD;
+    color: #FFFFFFFF;
+    border-radius: 5px 5px 0 0;
+}
+
+.rounded-circle {
+    width: 36px;
+    height: 36px;
+    background: #D9D9D9;
+}
+
+.dropdown {
+    padding: 20px 20px 40px;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.content {
+    padding: 100px 60px;
+    margin-left: 219px;
+}
+
+.cards {
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    width: 352px;
+    height: 121px;
+    border-radius: 12px;
+}
+
+.card:last-of-type:hover {
+    cursor: pointer;
+}
+
+.card-title {
+    margin-bottom: 10px;
+    color: #290661;
+    font-weight: bold;
+}
+
+.card span {
+    font-size: 28px;
+    color: #CED4DA;
+}
+
+.modal-content {
+    padding: 40px;
+    width: 530px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.modal-body {
+    padding: 0;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #290661;
+    margin-bottom: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.interval {
+    margin-bottom: 40px;
+}
+
+.interval .btn {
+    width: 100px;
+    border-radius: 4px;
+}
+
+.input-date {
+    border: 1px solid #6C757D;
+    border-radius: 4px;
+    padding: 9px 12px;
+    outline: none;
+    width: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+}
+
+.table {
+    min-width: 1101px;
+}

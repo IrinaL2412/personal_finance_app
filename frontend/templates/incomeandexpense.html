@@ -1,0 +1,58 @@
+<section class="income-and-expenses">
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    Вы действительно хотите удалить операцию?
+                </div>
+                <div class="modal-buttons">
+                    <button type="button" class="btn btn-success" id="button-confirm" data-bs-dismiss="modal">Да,
+                        удалить
+                    </button>
+                    <button type="button" class="btn btn-danger" id="button-cancel" data-bs-dismiss="modal">Не удалять
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Доходы и расходы</h1>
+        <form class="form">
+            <a href="javascript:void(0)" class="btn btn-success me-2" id="create-income">Создать доход</a>
+            <a href="javascript:void(0)" class="btn btn-danger" id="create-expense">Создать расход</a>
+        </form>
+        <div class="all-operations">
+            <div class="interval d-flex gap-3 align-items-center">
+                <a class="btn btn-secondary interval-btn" href="javascript:void(0)" role="button" id="button-today">Сегодня</a>
+                <a class="btn btn-outline-secondary interval-btn" href="javascript:void(0)" role="button" id="button-week">Неделя</a>
+                <a class="btn btn-outline-secondary interval-btn" href="javascript:void(0)" role="button" id="button-month">Месяц</a>
+                <a class="btn btn-outline-secondary interval-btn" href="javascript:void(0)" role="button" id="button-year">Год</a>
+                <a class="btn btn-outline-secondary interval-btn" href="javascript:void(0)" role="button" id="button-all">Все</a>
+                <a class="btn btn-outline-secondary interval-btn" href="javascript:void(0)" role="button" id="button-interval">Интервал</a>
+                <span class="fw-bold">с</span>
+                <label for="date-from" class="form-label d-none"></label>
+                <input type="text" class="input-date btn-outline-secondary form-control" id="date-from" placeholder="Дата" disabled data-previous-value="">
+                <span class="fw-bold">по</span>
+                <label for="date-to" class="form-label d-none"></label>
+                <input type="text" class="input-date btn-outline-secondary form-control" id="date-to" placeholder="Дата" disabled data-previous-value="">
+            </div>
+            <table class="table text-center border-top align-middle d-none" id="table">
+                <thead>
+                <tr>
+                    <th scope="col" class="col-2">№ операции</th>
+                    <th scope="col" class="col-1">Тип</th>
+                    <th scope="col">Категория</th>
+                    <th scope="col">Сумма</th>
+                    <th scope="col">Дата</th>
+                    <th scope="col">Комментарий</th>
+                    <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody id="table-body" class="text-center"></tbody>
+            </table>
+            <div id="information" class="d-none text-center fs-6">За данный период ничего не найдено</div>
+        </div>
+    </div>
+</section>

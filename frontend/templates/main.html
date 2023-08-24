@@ -1,0 +1,34 @@
+<section class="main">
+    <h1>Главная</h1>
+    <div class="all-operations">
+        <div class="interval d-flex gap-3 align-items-center">
+            <a class="btn btn-secondary interval-btn" href="javascript:void(0)" role="button" id="button-today">Сегодня</a>
+            <a class="btn btn-outline-secondary interval-btn" href="javascript:void(0)" role="button" id="button-week">Неделя</a>
+            <a class="btn btn-outline-secondary interval-btn" href="javascript:void(0)" role="button" id="button-month">Месяц</a>
+            <a class="btn btn-outline-secondary interval-btn" href="javascript:void(0)" role="button" id="button-year">Год</a>
+            <a class="btn btn-outline-secondary interval-btn" href="javascript:void(0)" role="button" id="button-all">Все</a>
+            <a class="btn btn-outline-secondary interval-btn" href="javascript:void(0)" role="button" id="button-interval">Интервал</a>
+            <span class="fw-bold">с</span>
+            <label for="date-from" class="form-label d-none"></label>
+            <input type="text" class="input-date btn-outline-secondary form-control" id="date-from" placeholder="Дата" disabled data-previous-value="">
+            <span class="fw-bold">по</span>
+            <label for="date-to" class="form-label d-none"></label>
+            <input type="text" class="input-date btn-outline-secondary form-control" id="date-to" placeholder="Дата" disabled data-previous-value="">
+        </div>
+    </div>
+
+    <div class="charts d-flex">
+        <div class="chart-left">
+            <h3 class="chart-title text-center">Доходы</h3>
+            <div id="information1" class="d-none text-center fs-6">За данный период ничего не найдено</div>
+            <canvas id="chart-left" class="canvas border-end"></canvas>
+        </div>
+        <div class="chart-right">
+            <h3 class="chart-title text-center">Расходы</h3>
+            <div id="information2" class="d-none text-center fs-6">За данный период ничего не найдено</div>
+            <canvas id="chart-right" class="canvas"></canvas>
+        </div>
+    </div>
+</section>
+
+
