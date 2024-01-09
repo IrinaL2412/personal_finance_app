@@ -147,7 +147,7 @@ export class Router {
         const incomeAndExpenseLink = document.getElementById('income-and-expense');
 
         if (userInfo && accessToken) {
-            this.profileFullNameElement.innerText = userInfo.name + userInfo.lastName;
+            this.profileFullNameElement.innerText = userInfo.name + ' ' + userInfo.lastName;
         }
 
         newRoute.load();
